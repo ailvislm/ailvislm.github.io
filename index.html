@@ -1,10 +1,94 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Amira's Website</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This website was created for ISDS 3107.</p>
+
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu">
+            <li class="menu-text">Amira's Website</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#school">School</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="callout primary hero-section">
+    <h1>Welcome to My Website</h1>
+    <p>Created for ISDS 3107 using Zurb Foundation.</p>
+</div>
+
+<div class="grid-container main-content">
+
+    <div class="grid-x grid-margin-x">
+
+        <div class="cell medium-4" id="about">
+            <div class="callout">
+                <h3>About Me</h3>
+                <p>
+                    My name is Amira. I am a student at LSU and this website
+                    was created as part of my ISDS 3107 coursework.
+                </p>
+            </div>
+        </div>
+
+        <div class="cell medium-4" id="school">
+            <div class="callout">
+                <h3>School</h3>
+                <p>
+                    I am learning about technology, websites, GitHub,
+                    and web development.
+                </p>
+            </div>
+        </div>
+
+        <div class="cell medium-4" id="interests">
+            <div class="callout">
+                <h3>My Interests</h3>
+                <p>
+                    I enjoy learning, working on student projects,
+                    and developing new skills.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/what-input@5.2.12/dist/what-input.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"></script>
+
+<script>
+    $(document).foundation();
+</script>
+
 </body>
 </html>
