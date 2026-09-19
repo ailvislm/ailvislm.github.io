@@ -9,26 +9,120 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff1f5;
+            color: #4f3740;
+        }
+
+        .top-bar {
+            background-color: #ffffff;
+            padding: 18px 35px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .top-bar ul {
+            background-color: transparent;
+        }
+
+        .top-bar .menu-text {
+            font-family: 'DM Serif Display', serif;
+            color: #b65f7b;
+            font-size: 1.5rem;
+        }
+
+        .top-bar a {
+            color: #6d4c59;
+            font-weight: 500;
+        }
+
+        .top-bar a:hover {
+            color: #c76886;
         }
 
         .hero-section {
-            padding: 60px 20px;
+            padding: 90px 20px;
             text-align: center;
+            background: linear-gradient(
+                rgba(255, 220, 230, 0.86),
+                rgba(255, 242, 246, 0.94)
+            ),
+            url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1600&q=80');
+
+            background-size: cover;
+            background-position: center;
+            border: none;
+        }
+
+        .hero-section h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 4rem;
+            color: #8f4860;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #684853;
         }
 
         .main-content {
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .callout {
+            border: none;
+            border-radius: 20px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 8px 22px rgba(120, 70, 90, 0.10);
+        }
+
+        .callout h3 {
+            font-family: 'DM Serif Display', serif;
+            color: #b65f7b;
+        }
+
+        .photo-section {
+            margin-top: 50px;
+        }
+
+        .photo-section h2 {
+            text-align: center;
+            font-family: 'DM Serif Display', serif;
+            color: #9b5268;
+            margin-bottom: 30px;
+        }
+
+        .photo-section img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 6px 18px rgba(120, 70, 90, 0.12);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #8f4860;
+            color: white;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
-<body>
-  <p>Updated for ISDS 3107.</p>
+
+<p style="text-align:center; margin-top:15px;">
+    Updated for ISDS 3107.
+</p>
+
 <div class="top-bar">
     <div class="top-bar-left">
         <ul class="dropdown menu">
@@ -40,7 +134,7 @@
     </div>
 </div>
 
-<div class="callout primary hero-section">
+<div class="hero-section">
     <h1>Welcome to My Website</h1>
     <p>Created for ISDS 3107 using Zurb Foundation.</p>
 </div>
@@ -53,8 +147,8 @@
             <div class="callout">
                 <h3>About Me</h3>
                 <p>
-                    My name is Amira. I am a student at LSU and this website
-                    was created as part of my ISDS 3107 coursework.
+                    Hi! My name is Amira. I am a student at LSU,
+                    and I am majoring in Information Systems and Analytics.
                 </p>
             </div>
         </div>
@@ -63,8 +157,8 @@
             <div class="callout">
                 <h3>School</h3>
                 <p>
-                    I am learning about technology, websites, GitHub,
-                    and web development.
+                    I attend Louisiana State University,
+                    and I am passionate about learning data analytics.
                 </p>
             </div>
         </div>
@@ -73,15 +167,47 @@
             <div class="callout">
                 <h3>My Interests</h3>
                 <p>
-                    I enjoy learning, working on student projects,
-                    and developing new skills.
+                    I enjoy painting, gaining knowledge about my religion,
+                    and going to the gym.
                 </p>
             </div>
         </div>
 
     </div>
 
+    <div class="photo-section">
+
+        <h2>A Few Things I Enjoy</h2>
+
+        <div class="grid-x grid-margin-x">
+
+            <div class="cell medium-4">
+                <img
+                    src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=800&q=80"
+                    alt="Painting">
+            </div>
+
+            <div class="cell medium-4">
+                <img
+                    src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80"
+                    alt="Books">
+            </div>
+
+            <div class="cell medium-4">
+                <img
+                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+                    alt="Gym">
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
+
+<footer>
+    <p>© 2026 Amira Samara · ISDS 3107</p>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/what-input@5.2.12/dist/what-input.min.js"></script>
